@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container {
+    background-color: rgb(105, 115, 125);
+    padding: 5px 20px 15px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select,
+textarea, legend,
+fieldset {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(141, 141, 172);
+    border-radius: 10px;
+    background-color: #305568;
+}
+
+.heading {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #6b3737; 
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+input[type="submit"]:hover{
+    background-color: rgb(26, 70, 70);
+}
+input[type="submit"]:active{
+    background-color: rgb(29, 112, 147);
+}
+.submit{
+    text-align: center;
+    
+}
+
+@media not all and (min-width: 500px) {
+    .heading:after {
+        content: "make payment";
+        color: red;
+        text-decoration:underline;
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 700px) and (min-width: 500px) {
+    #address textarea {
+        border: 1px solid green;
+    }
+}
+@media all and (max-width: 500px) {
+    #mail{
+        visibility: hidden;
+        position: relative;
+    }
+    #mail:before {
+        visibility: visible;
+        background-image: url('email.png');
+        background-size: 25px 25px;
+        display: inline-block;
+        width: 25px; 
+        height: 25px;
+        content:"";
+    }
+}
