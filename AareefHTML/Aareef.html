@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+			.aareef		{background-color: mediumpurple; border: 1px solid black; padding: 15px; color: black; text-align: center;}
+			.about		{background-color: mediumpurple; border: 1px solid black; padding: 15px; color: black; text-align: left;}
+			.contact	{background-color: mediumpurple; border: 1px solid black; padding: 15px;}
+			.drink 		{background-color: mediumpurple; border: 1px solid black; padding: 15px;}
+			.quote		{background-color: mediumpurple; border: 1px solid black; padding: 15px;}
+			.education	{background-color: mediumpurple; border: 1px solid black; padding: 15px;}
+			.place		{background-color: mediumpurple; border: 1px solid black; padding: 15px;}
+			h1			{background-color: dodgerblue;   border: 1px solid black; padding: 20px; color: red;}
+			h2			{background-color: dodgerblue;   border: 1px solid black; padding: 15px; color: purple;}
+			body		{background-color: dodgerblue;   border: 1px solid black; padding: 5px;}
+			table,th,td {background-color: mediumpurple; border: 1px solid black;}
+			p			{color: black;}	
+		</style>
+	</head>
+	
+	<body>
+		<hr>
+			<div class="aareef">
+				<h1>BIOGRAPHY</h1>
+				<img src="Aareef.jpg" alt="Aareef" width="220" height="200" title="Kazi Samsul Arefin">
+			</div>
+		<hr>
+			<div class="about">	
+				<h2><b><i>ABOUT DETAIL</i></b></h2>
+				<p><b>NAME:</b> Kazi Samsul Arefin <button type="button" onclick="doccument.getElementByID('demo').innerHTML=Name()">Click to Display Nickname</button></p>
+				<p><b>NATIONALITY:</b> Bangladeshi</p>
+				<p><b>RELIGION:</b> Islam</p>
+				<p><b>DATE OF BIRTH: </b><button type="button" onclick="alert('02 Ashin 1400')" title="Click To View Bengali Birth Date">17 September 1993</button></p>
+				<p><b>LIVES IN:</b> Dhaka, Bangladesh</p>
+				<p><b>HOME TOWN:</b> Jessore, Khulna, Bangladesh</p>
+			</div>		
+		<hr>
+			<div class="education">	
+				<h2><b><i>EDUCATIONAL DEGREES</i></b></h2>
+				<table style="width:100%">
+					<caption style=background-color:mediumpurple><b>Data Sheet</b></caption>
+					<br>
+					<tr>
+						<th>Standard</th>
+						<th>Instituition</th>
+						<th>Year</th>
+						<th>Board</th>
+						<th>Result</th>
+					</tr>
+					<tr>
+						<td>S.S.C</td>
+						<td>Jessore Zilla School, Jessore</td>
+						<td>2011</td>
+						<td>Jessore</td>
+						<td>Passed</td>
+					</tr>
+					<tr>
+						<td>H.S.C</td>
+						<td>B.A.F Shaheen College, Jessore</td>
+						<td>2013</td>
+						<td>Jessore</td>
+						<td>Passed</td>
+					</tr>
+					<tr>
+						<td>B.Sc</td>
+						<td>American International University - Bangladesh</td>
+						<td>2020</td>
+						<td>Dhaka</td>
+						<td>Pending</td>
+					</tr>
+				</table>
+			</div>
+		<hr>
+			<div class="contact">
+				<h2><b><i>CONTACT INFORMATION</i></b></h2>
+				<ul>
+					<li><b>Facebook: </b><small><a href="https://www.facebook.com/arefin.aareef/" target="_blank" title="Click To View Facebook"><button>FACEBOOK</button></a></small></li>
+					<li><b>Instagram: </b><a href="https://www.instagram.com/arefin.aareef/?hl=en/" target="_blank" title="Click To View Instagram">
+					<img src="instagram.jpg" alt= "Instagram" style="width:30px;height:30px;border:0;"></a></li>
+					<br>
+					<li><b>LinkedIn: </b></li>
+				</ul>
+				<iframe src="LinkedIn.html" height="50px" width="100%" name="linkedin"></iframe>
+				
+			</div>
+		<hr>
+			<div class="drink">
+				<h2><b><i>FAVOURITE DRINK</i></b></h2>
+				<ol type="I">
+					<li><sup>Co</sup><small>cac</small><sub>ola</sub></li>
+					<li><del>Mojo</del> Pepsi</li>
+				</ol>
+			</div>
+		<hr>	
+			<div class="quote">
+				<h2><b><i>FAVOURITE QUOTE</i></b></h2> 
+				<p><mark><q>Always Remember Who Was There When No One Else Was</q></mark></p>
+			</div>
+		<hr>
+			<div class="place">
+				<h2><b><i>PLACE VISITED</i></b></h2>
+				<form action="/action_page.php" target="_blank" method="GET">
+					<fieldset>
+						<legend><b>Visited With Friends:</b></legend>
+						<i>First Place:</i><br>
+						<input type="text" name="firstplace" value="Sajek">
+						<br>
+						<i>Second Place:</i><br>
+						<input type="text" name="secondplace" value="Sylhet">
+						<br><br>
+						<input type="submit" value="Submit">
+					</fieldset>
+					<p><b>Next Destination: </b></p>
+					<input type="radio" name="place" value="coxbazar" checked> Coxbazar<br>
+					<input type="radio" name="place" value="bandarban"> Bandarban<br>
+					<input type="radio" name="place" value="other"> Other [Select one from the drop down list]<br>
+					<input list="places" name="place">
+						<datalist id="places">
+							<option value="Sundarban">
+							<option value="Shrimongol">
+							<option value="Rangamati">
+							<option value="Saintmartin">
+							<option value="Birishiri">
+							<option value="Nafakhum">
+						</datalist>
+					<input type="submit">
+					<br><br>
+					<p><b>Select Prefered Transportation Module To Travel: </b></p>
+						<select name="transportation" size="4" multiple>
+							<option value="bus">Volvo Bus</option>
+							<option value="car">Toyota Car</option>
+							<option value="train">Bullet Train</option>
+							<option value="bike">Kawasaki Ninja</option>
+							<option value="ship">Queen Marry</option>
+							<option value="plane" selected>Fighter Plane</option>
+						</select>
+						<br><br>
+						<input type="submit">
+				</form>
+				<br>
+				<form action="/action_page.php" target="_blank" method="GET">
+					<p><b>Let Us Know Your Experience:</b></p>
+					<textarea name="opinion" rows="5" cols="70">Leave Your Appreciation / Suggestion / Objection Inside The Box - </textarea>
+					<br>
+					<input type="submit">
+				</form>
+			</div>
+	</body>
+</html>

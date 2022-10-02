@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Challenge 2</title>
+    <style>
+        body{
+            min-height: 100vh;
+            margin: 0px;
+        }
+        .box{
+            background-color: rgb(58, 88, 88);
+            /* text-align: center; */
+            color:black;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: 400;
+            /* margin: auto; */
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 5px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+        .container-1{
+            display: grid;
+            grid-template-rows: 2fr 6fr 1fr;
+            grid-gap: 5px;
+        }
+        .container-2{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 6fr 2fr;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Navigation</div>
+        <div class="container-1">
+            <div class="box">Headings</div>
+            <div class="container-2">
+                <div class="box">Contents</div>
+                <div class="box">Advertisement</div>
+            </div>
+            <div class="box">Footer</div>
+        </div>
+    </div>
+</body>
+</html>

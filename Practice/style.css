@@ -1,0 +1,79 @@
+body {
+	background-color: rgb(173, 198, 230);
+}
+#store {
+	color: white;
+	background-color: rgb(71, 99, 160);
+	text-align: left;
+	padding: 40px;
+}
+#bike {
+	height: 250px;
+	width: 75%;
+	border: 2px solid violet;
+}
+p {
+	color: black;
+	padding: 10px;
+	margin: 5px;
+} 
+th, td, caption {
+	color: white;
+	border: 3px;
+	border-collapse: collapse;
+	border-radius: 10px;
+	border-style: double;
+	border-color: rgb(105, 43, 163);
+} 
+caption {
+	background-color: rgb(53, 53, 99);
+	padding: 20px;
+}
+td {
+	text-align: center;
+}
+table {
+	border-spacing: 5px;
+}
+tr:nth-child(even) {
+	background-color: rgb(53, 53, 99);
+}
+tr:nth-child(odd) {
+	background-color: rgb(71, 99, 160);
+}
+tr:hover {
+	background-color: rgb(144, 75, 209);
+}
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: rgb(53, 53, 99);
+	margin: 0;
+	padding: 0;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	text-align: center;
+	color: white;
+	padding: 25px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: rgb(144, 75, 209);
+}
+.company {
+	color: white;
+	background-color: rgb(53, 53, 99);
+	border: 10px;
+	border-style: inset;
+	border-color: rgb(71, 99, 160);
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+}
+.color {
+	color: red;
+}

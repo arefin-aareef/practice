@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Trees</title>
+    <style>
+        body{
+            background: lightgreen;
+        }
+        
+
+        .tree-container{
+            height: 2200px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -115px;
+        }
+        .treeitem{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            margin: 20px 50px 50px 20px;
+            box-shadow: 10px 10px 25px black;
+            align-self: flex-start;
+            height: auto;
+            background-color: rgba(18, 140, 87, 0.867);
+        }
+
+        
+        #treeitem-4{
+            position:relative;
+            top: -290px;
+        }
+        #treeitem-5{
+            position:relative;
+            top: 10px;
+        }
+        #treeitem-6{
+            position: relative;
+            top: -130px;
+        }
+        #treeitem-7{
+            position: relative;
+            top: -600px;
+            height: 875px;
+        }
+        #treeitem-8{
+            position: relative;
+            top: -330px;
+            height: 605px;
+        }
+        #treeitem-9{
+            position: relative;
+            top: -125px;
+        }
+
+        .treepic{
+            border: none;
+            border-radius: 10px;
+            width: 330px;
+            height: 250px;
+            padding: auto;
+            margin: -15px;
+        }
+        .design-button{
+            border: none;
+            border-radius: 10px;
+            width: 300px;
+            height: 80px;
+            background: lightgrey;
+            align-items: center;
+            color: black;
+            font-size: 1em;
+        }
+        #button-8{
+            height: 85px;
+        }
+        footer{
+            align-content: center;
+        }
+        button:hover{
+            background-color: lightgreen;
+        }
+        button:active{
+            background-color: brown;
+        }
+
+        .demo-bg,.header{
+            justify-content: center;
+            height: 200px;
+            width: 1135px;
+            margin-left: 85px;
+            margin-top: 50px;
+            
+            
+
+
+        }
+        .header {
+            position: relative;  
+            padding: 60px 190px;
+            font-size: 4em;
+            color: white;
+
+          
+        }
+        .demo-bg{
+            opacity: 0.75;
+            position: absolute;
+            box-shadow: 10px 10px 25px black;
+            border-radius: 5px;
+
+            
+        }
+        .demo-wrap {
+            overflow:hidden;
+            position: relative;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="demo-wrap">
+        <img src="header.jpg" alt="header" class="demo-bg">
+        <div class="demo-content">
+            <h1 class="header">Your Favourite Bonsai Trees</h1>
+        </div>
+    </div>
+    
+    <div class="tree-container">
+        <div class="treeitem" id="treeitem-1">
+            <img class="treepic" src="bonsai1.jpg" alt="bonsai1">
+            <h2>This is your Favourite Bonsai Tree</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nam, debitis alias asperiores voluptates quasi est commodi amet odio laborum! ipsum dolor sit amet consectetur adipisicing elit. Amet, rerum? Quia, cumque. Odio, molestias veritatis! Voluptatibus, aut porro. Saepe modi cupiditate quia veniam at placeat.</p>
+            <button class="design-button"> Read More</button>
+        </div>
+        
+        <div class="treeitem" id="treeitem-2">
+            <img src="bonsai2.jpg" alt="bonsai2" class="treepic">
+            <h2>This is another Bonsai</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim explicabo dolor voluptate, molestias nemo quaerat, numquam dolores, consequatur in magni aperiam. Debitis adipisci facere ipsa accusamus beatae sunt iure quaerat? Error saepe vel repellendus quis debitis eos, corrupti, officia consectetur dolorem voluptatibus eius autem labore accusantium dolore aspernatur adipisci vero soluta dolores est et. Consequuntur quasi quidem amet placeat totam, quam, omnis exercitationem nam molestiae cumque hic! Dolorum nihil dolor ab quo expedita eaque? Aperiam incidunt consequatur soluta impedit sint in quae excepturi molestias consequuntur deleniti sit aliquid maxime commodi et, voluptas dolores fugiat animi odio beatae nisi fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iusto soluta officia. Quasi cum fugit facere ipsam voluptatem nemo esse est, molestiae dolor, praesentium quo neque repellendus iste, eveniet officiis rerum nisi recusandae enim fuga reiciendis voluptates doloribus! Tempore quae debitis rem et voluptatem, repellat ipsa. Ducimus expedita soluta qui. </p>
+            <button class="design-button"> Read More</button>
+        </div>
+        
+        <div class="treeitem" id="treeitem-3">
+            <img src="bonsai3.jpg" alt="bonsai3" class="treepic">
+            <h2>Grow Bonsai at Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, labore vero quam officiis accusamus voluptas reprehenderit deserunt, maiores consequuntur aliquid ducimus sit, illo mollitia suscipit nostrum. Culpa, vero. Nesciunt rerum minima, tempora illo fuga qui repellendus assumenda earum perferendis! Et culpa fugiat, rem vitae quidem ut sint modi dolore aut officiis neque ducimus! Fuga quibusdam velit recusandae pariatur, cumque a? Alias consectetur ratione tenetur amet eos quidem assumenda at ipsa culpa incidunt beatae molestiae ex voluptates placeat fuga iure, recusandae, nisi eum nobis praesentium. Obcaecati, atque voluptate corrupti consequatur eos ab totam, repellat consectetur fuga odio nihil, pariatur suscipit sunt.</p>
+            <button class="design-button"> Read More</button>
+        </div>
+        
+        <div class="treeitem" id="treeitem-4">
+            <img src="bonsai4.jpg" alt="bonsai4" class="treepic">
+            <h2>This is the best bonsai</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquid ipsa rerum ad nobis iure soluta similique facere fugit eveniet, voluptate iste cum exercitationem hic ipsam enim corrupti ut numquam repellat nesciunt. Consectetur atque animi incidunt ut illo maiores magni!</p>
+        </div>
+
+        <div class="treeitem" id="treeitem-5">
+            <img src="bonsai5.jpg" alt="bonsai5" class="treepic">
+            <h2>Do Bonsai Yourself</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed architecto odio optio consequuntur. Maiores iste, quis atque aperiam illo nesciunt saepe quia ratione, assumenda laboriosam cupiditate, quae id distinctio.</p>
+        </div>
+
+        <div class="treeitem" id="treeitem-6">
+            <img src="bonsai6.jpg" alt="bonsai6" class="treepic">
+            <h2>All Bonsai Collection</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores consectetur dolores magni soluta fuga, incidunt iure nam. Libero quam, consequuntur possimus facere quibusdam earum saepe asperiores eveniet hic eius fugiat itaque dolores odit. Omnis excepturi eius laborum cumque ipsa magni hic perspiciatis commodi voluptatibus, aperiam placeat rerum cum dolorem, itaque magnam aut! Animi aspernatur, eligendi repellat illum fugit ducimus repellendus. Enim omnis maxime quam ab asperiores inventore nam corrupti sapiente.</p>
+            <button class="design-button"> Read More</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque explicabo nemo repudiandae sunt dolore fugit inventore quo sequi suscipit quia recusandae ipsum, exercitationem eos fuga expedita iste ducimus eligendi.</p>
+
+        </div>
+
+        <div class="treeitem" id="treeitem-7">
+            <img src="bonsai7.jpg" alt="bonsai7" class="treepic">
+            <h2>Buy bonsai here</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem deleniti itaque officia veritatis aperiam. Temporibus perferendis a voluptate dolores assumenda? ipsum dolor sit amet consectetur adipisicing elit. Rerum, temporibus sed eligendi itaque expedita delectus veritatis at fugiat unde ipsum molestias autem harum possimus sint. Perspiciatis eos et ex voluptatem. ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi ratione aspernatur nihil voluptas non reprehenderit nesciunt facere laborum repellendus ab eum consequatur voluptatum vero libero, aliquid, dolores rerum, assumenda repellat sit. Qui et, eius in atque itaque possimus! Ullam voluptatem alias amet sapiente doloribus. Pariatur, quia iste doloribus, exercitationem cupiditate rerum odio dolorem voluptates, omnis similique provident eum quo natus necessitatibus hic magni corporis maxime consectetur! Iusto amet, nobis atque facilis recusandae numquam illo sit ut facere, dolore, sed voluptate impedit repudiandae libero sunt harum unde! Odio consectetur pariatur odit corrupti numquam placeat? Veritatis quaerat similique iusto nobis expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus non rem eveniet, repellendus ratione, distinctio aperiam laborum quis voluptates fugit iusto, expedita ad officiis aliquid doloribus molestiae. Dolorem, doloribus nobis!</p>
+            
+        </div>
+        
+        <div class="treeitem" id="treeitem-8">
+            <img src="bonsai8.jpg" alt="bonsai8" class="treepic">
+            <h2>How To Take Care Of Your Bonsai</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam cumque voluptatum facere natus voluptatem ea deserunt dolorum maxime ex nesciunt enim quaerat, ipsam veritatis aliquid sequi laudantium, quam illum officiis. Voluptatem, ad! Corrupti sed hars rerum minima reprehenderit? ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, consectetur. Veritatis expedita qui tempore amet odio voluptas eaque earum voluptatem!</p>
+            <button class="design-button" id="button-8"> Read More</button>
+        </div>
+
+        <div class="treeitem" id="treeitem-9">
+            <img src="bonsai9.jpg" alt="bonsai9" class="treepic">
+            <h2>All Information You Needed</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis possimus ullam dicta quaerat nostrum odio ad quas! Odio eveniet porro, itaque commodi ab beatae?</p>
+            
+        </div>
+
+        
+    </div>
+    <center>
+        <footer>
+            <a href="#">&copy; 2022 | Kazi Samsul Arefin</a>
+        </footer>
+    </center>
+</body>
+</html>
