@@ -1,4 +1,5 @@
 console.log("Welcome to JS practice");
+console.log("# VARIABLE");
 // CREATING VARIABLE
 // IDENTIFIER(NAME MUST BE UNIQUE, CAN'T BE SAME AS RESERVED KEYWORDS)
 // (_ $ ARE ACCEPTED ONLY FOR VARIABLE NAMES)
@@ -20,29 +21,29 @@ variableName3 = "Reassigning variable value";
 console.log(variableName3);
 
 // STRING
-console.log("STRING");
+console.log("# STRING");
 const myName = 'Aareef';
 const myNameF = "Arefin";
 console.log(myNameF);
 console.log(myName);
 
 // BACKTICKS
-console.log("BACKTICKS");
+console.log("# BACKTICKS");
 const backticks = `hello, ${myName}`;
 const check = `${2 + 2}`;
 console.log(backticks);
 console.log(check);
-console.log(typeof check); //data type checking
+console.log(typeof check); //DATA TYPE CHECKING
 
 // NUMBERS
-console.log("NUMBERS");
+console.log("# NUMBERS");
 const firstNumber = 5;
 const secondNumber = 10;
 const result = firstNumber + secondNumber;
 console.log(result);
 
 // BOOLEANS
-console.log("BOOLEANS");
+console.log("# BOOLEANS");
 const isCool = false;
 console.log(isCool);
 console.log(typeof isCool);
@@ -53,15 +54,15 @@ if(isCool) {
     console.log("oh, hi");
 }
 
-// null means value is unknown
-// undifined
+// NULL MEANS VALUE IS UNKNOWN
+// UNDIFINED
 let x;
 console.log(x);
 
-// objects
+// OBJECTS
 // const name = 'Aareef'
 // const age = 29;
-console.log("OBJECTS");
+console.log("# OBJECTS");
 const person = {
     name: 'Aareef',
     age: 29,
@@ -69,13 +70,13 @@ const person = {
 console.log(person);
 console.log(typeof person);
 
-// dot notation
-console.log("DOT NOTATION");
+// DOT NOTATION
+console.log("# DOT NOTATION");
 console.log(person.name);
 console.log(typeof person.name);
 
-// array
-console.log("ARRAY");
+// ARRAY
+console.log("# ARRAY");
 const arr = [1, 2, 3, 4];
 console.log(arr);
 console.log(typeof arr);
@@ -84,22 +85,22 @@ const date = new Date();
 console.log(date);
 console.log(typeof date);
 
-// comparison operators
-console.log("COMPARISON OPERATOR");
+// COMPARISON OPERATORS
+console.log("# COMPARISON OPERATOR");
 const a = 10;
 const b = 10;
 console.log(a >= b);
 console.log(a <= b);
 console.log(a == b);
 console.log(a != b);
-// strict equality
+// STRICT EQUALITY
 console.log(a === b);
-// strict inequality
-// strict vs loose equality
+// STRICT INEQUALITY
+// STRICT VS LOOSE EQUALITY
 console.log(a !== b);
 
-// lgical operators
-console.log("LOGICAL OPERATORS");
+// LGICAL OPERATORS
+console.log("# LOGICAL OPERATORS");
 // and && => both operators need to be true
 console.log(true && false);
 // or || => at least one operator need to be true
@@ -107,8 +108,8 @@ console.log(true || false);
 // not
 console.log(!true);
 
-// if statements
-console.log("IF - ELSE STATEMENTS");
+// IF STATEMENTS
+console.log("# IF - ELSE STATEMENTS");
 const age = 18;
 if (age > 18) {
     console.log("You may enter");
@@ -118,25 +119,25 @@ if (age > 18) {
     console.log("grow up");
 }
 
-// while loop
+// WHILE LOOP
 // display 0-9
-console.log("WHILE LOOP");
+console.log("# WHILE LOOP");
 let i = 0;
 while(i < 10) {
     console.log(i);
     i++;
 }
 
-// for loop
+// FOR LOOP
 // for([initialization]; [condition]; [final-expression])
-console.log("FOR LOOP");
+console.log("# FOR LOOP");
 for(let i = 0; i < 10; i++) {
     console.log(i);
 }
 
-// functions
+// FUNCTIONS
 // block of code which performs a task
-console.log("FUNCTION");
+console.log("# FUNCTION");
 // a function declaration opt 1
 function square(number) {
     return number * number;
@@ -157,4 +158,28 @@ const func2 = (number) => {
 }
 const result3 = func2(10);
 console.log(result3);
+
+// INVOKING FUNCTION
+console.log("# INVOKING FUNCTION");
+function sayHi(name) {
+    console.log(`Hi, ${name}!`)
+}
+sayHi("Aareef");
+sayHi("Tom")
+
+// RETURNS UNDEFINED IF NOT SPECIFIED
+console.log("RETURN FUNCTION");
+function add(a, b) {
+    return a+ b;
+}
+const sum = add(2, 2);
+console.log(sum);
+
+function test() {
+    return true;
+    return false;
+}
+const bool = test();
+console.log(bool);
+
 
