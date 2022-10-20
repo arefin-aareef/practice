@@ -182,4 +182,16 @@ function test() {
 const bool = test();
 console.log(bool);
 
+// ARROW FUNCTION (doesn't have reverse keyword)
+console.log("ARROW FUNCTION");
+const sqr = (number) => {
+    return number * number;
+}
+const sqr1 = (number) => number * number;
+
+const result4 = sqr(3);
+const result5 = sqr1(4);
+console.log(result4);
+console.log(result5);
+
 
