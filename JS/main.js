@@ -1,3 +1,4 @@
+console.log("Welcome to JS practice");
 // creating variable
 // identifier(name must be unique, can't be same as reserved keywords)
 // (_ $ are accepted only for variable names)
@@ -89,6 +90,42 @@ console.log(a === b);
 // strict inequality
 // strict vs loose equality
 console.log(a !== b);
+
+// lgical operators
+// and && => both operators need to be true
+console.log(true && false);
+// or || => at least one operator need to be true
+console.log(true || false);
+// not
+console.log(!true);
+
+// if statements
+console.log("IF - ELSE STATEMENTS");
+const age = 18;
+if (age > 18) {
+    console.log("You may enter");
+} else if (age === 18) {
+    console.log("You are adult now");
+} else {
+    console.log("grow up");
+}
+
+// while loop
+// display 0-9
+console.log("WHILE LOOP");
+let i = 0;
+while(i < 10) {
+    console.log(i);
+    i++;
+}
+
+// for loop
+// for([initialization]; [condition]; [final-expression])
+console.log("FOR LOOP");
+for(let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
 
 
 
