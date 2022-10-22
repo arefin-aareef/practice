@@ -1,3 +1,5 @@
+// PRACTICE FROM JAVASCRIPT MASTERY
+
 console.log("Welcome to JS practice");
 console.log("# VARIABLE");
 // CREATING VARIABLE
