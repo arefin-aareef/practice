@@ -41,21 +41,39 @@
 
 // SWITCH STATEMENTS
 
-var fruittype = prompt("Which fruit?");
-switch (fruittype) {
-    case 'Mango':
-        console.log('60tk KG');
-        break;
-    case 'Banana':
-        console.log('80tk KG');
-        break;
-    case 'Apple':
-        console.log('90tk KG');
-        break;
-    case 'Pineapple':
-        console.log('60tk KG');
-        break;
-    default:
-        console.log(`${fruittype} Fruit over`);
+// var fruittype = prompt("Which fruit?");
+// switch (fruittype) {
+//     case 'Mango':
+//         console.log('60tk KG');
+//         break;
+//     case 'Banana':
+//         console.log('80tk KG');
+//         break;
+//     case 'Apple':
+//         console.log('90tk KG');
+//         break;
+//     case 'Pineapple':
+//         console.log('60tk KG');
+//         break;
+//     default:
+//         console.log(`${fruittype} Fruit over`);
+// }
+// console.log("Anything more?");
+
+// WHILE LOOP
+
+// let i=0;
+// while(i<5) {
+//     console.log('Hello World');
+//     i++;
+// }
+
+// FOR IN LOOP
+let animal = {  //animal is object with 2 keys
+    name: "Zebra",
+    leg: 4
+};
+
+for(let key in animal) {
+    console.log(key, animal[key]);
 }
-console.log("Anything more?");
