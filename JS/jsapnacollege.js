@@ -31,9 +31,31 @@
 // }
 
 // CONDITIONAL STATEMENT
-var time = prompt("Hey what's the time");
-        if(time>7 && time<17) {
-            alert("Good morning");
-        } else  {
-            alert("Good night");
-        }
+
+// var time = prompt("Hey what's the time");
+//     if(time>7 && time<17) {
+//         alert("Good morning");
+//     } else  {
+//         alert("Good night");
+//     }
+
+// SWITCH STATEMENTS
+
+var fruittype = prompt("Which fruit?");
+switch (fruittype) {
+    case 'Mango':
+        console.log('60tk KG');
+        break;
+    case 'Banana':
+        console.log('80tk KG');
+        break;
+    case 'Apple':
+        console.log('90tk KG');
+        break;
+    case 'Pineapple':
+        console.log('60tk KG');
+        break;
+    default:
+        console.log(`${fruittype} Fruit over`);
+}
+console.log("Anything more?");
