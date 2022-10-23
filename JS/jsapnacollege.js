@@ -77,3 +77,16 @@ let animal = {  //animal is object with 2 keys
 for(let key in animal) {
     console.log(key, animal[key]);
 }
+
+// ARRAYS
+
+let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
+for(let index in names) {
+    console.log(index, names[index]);
+}
+
+// FOR OF
+
+for(let name of names) {
+    console.log(name);
+}
