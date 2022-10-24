@@ -96,16 +96,29 @@
 
 // FUNCTION
 
-function cookMaggi(maggi, water, pan) {
-    console.log("Maggi will be ready in "
-    + maggi * 2
-    + " minutes"
-    + " and Ingredients used are:- "
-    + maggi + " Maggi, "
-    + water + " cups of water"
-    + " using " + pan + " Pan")
-}
-cookMaggi(4, 8, 1);
+// function cookMaggi(maggi, water, pan) {
+//     console.log("Maggi will be ready in "
+//     + maggi * 2
+//     + " minutes"
+//     + " and Ingredients used are:- "
+//     + maggi + " Maggi, "
+//     + water + " cups of water"
+//     + " using " + pan + " Pan")
+// }
+// cookMaggi(4, 8, 1);
 
+// FUNCTION WITH RETURN VALUE
+
+let bread1 = prompt("Which bread would u like to have:- ");
+let veggies1 = prompt("What are your favurite veggies:- ");
+let sauce1 = prompt("Which sauce would you like to have:- ");
+
+function makeSandwich(bread, veggies, sauce) {
+    let sandwich = bread + " bread " + veggies + " " + sauce + " sandwich is ready";
+    return sandwich;
+}
+
+let vegSandwich = makeSandwich(bread1, veggies1, sauce1);
+console.log(vegSandwich);
 
 
