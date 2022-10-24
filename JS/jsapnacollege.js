@@ -109,16 +109,35 @@
 
 // FUNCTION WITH RETURN VALUE
 
-let bread1 = prompt("Which bread would u like to have:- ");
-let veggies1 = prompt("What are your favurite veggies:- ");
-let sauce1 = prompt("Which sauce would you like to have:- ");
+// let bread1 = prompt("Which bread would u like to have:- ");
+// let veggies1 = prompt("What are your favurite veggies:- ");
+// let sauce1 = prompt("Which sauce would you like to have:- ");
 
-function makeSandwich(bread, veggies, sauce) {
-    let sandwich = bread + " bread " + veggies + " " + sauce + " sandwich is ready";
-    return sandwich;
-}
+// function makeSandwich(bread, veggies, sauce) {
+//     let sandwich = bread + " bread " + veggies + " " + sauce + " sandwich is ready";
+//     return sandwich;
+// }
 
-let vegSandwich = makeSandwich(bread1, veggies1, sauce1);
-console.log(vegSandwich);
+// let vegSandwich = makeSandwich(bread1, veggies1, sauce1);
+// console.log(vegSandwich);
+
+// STRINGS
+
+var favShow = "Game of Throne";
+console.log(favShow.length);
+
+console.log(favShow[0]);
+console.log(favShow[favShow.length-1]);
+
+// RETURNING THE POSITION OF A SUB STRING
+console.log(favShow.indexOf("of"));
+
+// SPECIFIC POSITION OF A SUB STRIING
+console.log(favShow.slice(5,9));
+
+var myName = "My Name Is Aareef";
+console.log(myName.toUpperCase());
+console.log(myName.toLowerCase());
+
 
 
