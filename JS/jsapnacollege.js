@@ -1,3 +1,5 @@
+// BUTTON CLICK ACTION
+
 // let helloButton = document.querySelector('button');
 // helloButton.addEventListener('click', showMessage);
 
@@ -69,24 +71,41 @@
 // }
 
 // FOR IN LOOP
-let animal = {  //animal is object with 2 keys
-    name: "Zebra",
-    leg: 4
-};
 
-for(let key in animal) {
-    console.log(key, animal[key]);
+// let animal = {  //animal is object with 2 keys
+//     name: "Zebra",
+//     leg: 4
+// };
+
+// for(let key in animal) {
+//     console.log(key, animal[key]);
+// }
+
+// // ARRAYS
+
+// let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
+// for(let index in names) {
+//     console.log(index, names[index]);
+// }
+
+// // FOR OF
+
+// for(let name of names) {
+//     console.log(name);
+// }
+
+// FUNCTION
+
+function cookMaggi(maggi, water, pan) {
+    console.log("Maggi will be ready in "
+    + maggi * 2
+    + " minutes"
+    + " and Ingredients used are:- "
+    + maggi + " Maggi, "
+    + water + " cups of water"
+    + " using " + pan + " Pan")
 }
+cookMaggi(4, 8, 1);
 
-// ARRAYS
 
-let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
-for(let index in names) {
-    console.log(index, names[index]);
-}
 
-// FOR OF
-
-for(let name of names) {
-    console.log(name);
-}
