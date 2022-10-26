@@ -123,21 +123,35 @@
 
 // STRINGS
 
-var favShow = "Game of Throne";
-console.log(favShow.length);
+// var favShow = "Game of Throne";
+// console.log(favShow.length);
 
-console.log(favShow[0]);
-console.log(favShow[favShow.length-1]);
+// console.log(favShow[0]);
+// console.log(favShow[favShow.length-1]);
 
 // RETURNING THE POSITION OF A SUB STRING
-console.log(favShow.indexOf("of"));
+// console.log(favShow.indexOf("of"));
 
 // SPECIFIC POSITION OF A SUB STRIING
-console.log(favShow.slice(5,9));
+// console.log(favShow.slice(5,9));
 
-var myName = "My Name Is Aareef";
-console.log(myName.toUpperCase());
-console.log(myName.toLowerCase());
+// var myName = "My Name Is Aareef";
+// console.log(myName.toUpperCase());
+// console.log(myName.toLowerCase());
 
+// USER DEFINED DATA TYPES
+// OBJECTS
+
+let animal = {
+    name: "Cow",
+    legs: 4
+}
+
+console.log(animal);
+// DOT NOTATION
+console.log(animal.name); 
+// BRACKET NOTATION
+let legsProp = "legs"
+console.log(animal[legsProp]);
 
 
