@@ -81,13 +81,6 @@
 //     console.log(key, animal[key]);
 // }
 
-// // ARRAYS
-
-// let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
-// for(let index in names) {
-//     console.log(index, names[index]);
-// }
-
 // // FOR OF
 
 // for(let name of names) {
@@ -130,9 +123,11 @@
 // console.log(favShow[favShow.length-1]);
 
 // RETURNING THE POSITION OF A SUB STRING
+
 // console.log(favShow.indexOf("of"));
 
 // SPECIFIC POSITION OF A SUB STRIING
+
 // console.log(favShow.slice(5,9));
 
 // var myName = "My Name Is Aareef";
@@ -140,18 +135,28 @@
 // console.log(myName.toLowerCase());
 
 // USER DEFINED DATA TYPES
+
 // OBJECTS
 
-let animal = {
-    name: "Cow",
-    legs: 4
+// let animal = {
+//     name: "Cow",
+//     legs: 4
+// }
+
+// console.log(animal);
+// // DOT NOTATION
+// console.log(animal.name); 
+// // BRACKET NOTATION
+// let legsProp = "legs"
+// console.log(animal[legsProp]);
+
+// ARRAYS
+
+let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
+console.log(names);
+console.log(names.length);
+console.log(names[2]);
+
+for(let index in names) {
+    console.log(index, names[index]);
 }
-
-console.log(animal);
-// DOT NOTATION
-console.log(animal.name); 
-// BRACKET NOTATION
-let legsProp = "legs"
-console.log(animal[legsProp]);
-
-
