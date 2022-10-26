@@ -114,6 +114,17 @@
 // let vegSandwich = makeSandwich(bread1, veggies1, sauce1);
 // console.log(vegSandwich);
 
+function hello(fname, lname) {
+    console.log("Hello " + fname + " " + lname)
+}
+hello("Arefin", "Aareef");
+hello("Rakib", "Raihan");
+
+function addition(a,b) {
+    return a+b;
+}
+console.log(addition(5,5))
+
 // STRINGS
 
 // var favShow = "Game of Throne";
@@ -152,11 +163,11 @@
 
 // ARRAYS
 
-let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
-console.log(names);
-console.log(names.length);
-console.log(names[2]);
+// let names = ["Aareef", "Hemel", "Rakib", "Chayon"];
+// console.log(names);
+// console.log(names.length);
+// console.log(names[2]);
 
-for(let index in names) {
-    console.log(index, names[index]);
-}
+// for(let index in names) {
+//     console.log(index, names[index]);
+// }
