@@ -114,16 +114,16 @@
 // let vegSandwich = makeSandwich(bread1, veggies1, sauce1);
 // console.log(vegSandwich);
 
-function hello(fname, lname) {
-    console.log("Hello " + fname + " " + lname)
-}
-hello("Arefin", "Aareef");
-hello("Rakib", "Raihan");
+// function hello(fname, lname) {
+//     console.log("Hello " + fname + " " + lname)
+// }
+// hello("Arefin", "Aareef");
+// hello("Rakib", "Raihan");
 
-function addition(a,b) {
-    return a+b;
-}
-console.log(addition(5,5))
+// function addition(a,b) {
+//     return a+b;
+// }
+// console.log(addition(5,5))
 
 // STRINGS
 
@@ -155,11 +155,39 @@ console.log(addition(5,5))
 // }
 
 // console.log(animal);
+
 // // DOT NOTATION
+
 // console.log(animal.name); 
+
 // // BRACKET NOTATION
+
 // let legsProp = "legs"
 // console.log(animal[legsProp]);
+
+let lecture = 10;
+let section = 3;
+let title = 'Javascript'
+//course is an object
+const course = {  
+    //properties
+    lecture: 10, 
+    section: 3,
+    title: 'Javascript',
+    //nested object
+    notes: { 
+        intro: 'Welcome'
+    },
+    //creating function in a object
+    enroll() {
+        console.log('You are enrolled')
+    }
+}
+// calling function out of object
+course.enroll();
+console.log(course.title);
+
+
 
 // ARRAYS
 
