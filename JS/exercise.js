@@ -60,6 +60,14 @@ const Product1 = class Product {
         this.discount = discount;
         this.productCode = productCode;
     }
+    get getDiscountValue() {
+        return this.discount;
+    }
+    set setDiscountValue(value) {
+        this.discount = value;
+    }
 }
 
 let chair = new Product1('Chair', 500, 15, 'C10');
+
+
