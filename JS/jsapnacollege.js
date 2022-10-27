@@ -200,10 +200,20 @@ function createCourse(title) {
     }
    
 }
-const course = createCourse('JavaScript');
-console.log(course);
+// const course = createCourse('JavaScript');
+// console.log(course);
 
+// CONSTRUCTER FUNCTION
 
+function Course(title) {
+    this.title = title,
+    this.enroll = function() {
+        console.log('You are enrolled Now')
+    }
+}
+const course = new Course('JS');
+course.enroll();
+console.log(course.title);
 
 
 // ARRAYS
