@@ -186,6 +186,8 @@ const course = {
 // calling function out of object
 course.enroll();
 console.log(course.title);
+// adding new property in object
+course.price = 999; 
 
 
 
