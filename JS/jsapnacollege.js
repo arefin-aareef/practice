@@ -168,6 +168,7 @@
 // let lecture = 10;
 // let section = 3;
 // let title = 'Javascript'
+
 // //course is an object
 // const course = {  
 //     //properties
@@ -186,9 +187,9 @@
 
 // // calling function out of object
 // course.enroll();
-// console.log(course.title);
 // // adding new property in object
 // course.price = 999; 
+// console.log(course);
 
 // FACTORY FUNCTION
 
@@ -201,7 +202,7 @@
 //     }
    
 // }
-// const course = createCourse('JavaScript');
+// const course = createCourse('JavaScript2');
 // console.log(course);
 
 // CONSTRUCTER FUNCTION
@@ -246,17 +247,18 @@
 
 // DIFFERNCE BETWEEN PRIMITIVE AND REFERENCE DATA TYPE 
 // primitive data type
-let number = 10;
-// pass by value
-let number2 = number; 
-number = 15;
-console.log(number);
-console.log(number2);
+// let number = 10;
+// // pass by value
+// let number2 = number; 
+// number = 15;
+// console.log(number);
+// console.log(number2);
 
-// reference data type
-let obj = {number: 10};
-// pass by reference
-let obj2 = obj;
-obj.number = 15;
-console.log(obj);
-console.log(obj2);
+// // reference data type
+// let obj = {number: 10};
+// // pass by reference
+// let obj2 = obj;
+// obj.number = 15;
+// console.log(obj);
+// console.log(obj2);
+
