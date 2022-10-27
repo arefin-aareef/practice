@@ -165,29 +165,44 @@
 // let legsProp = "legs"
 // console.log(animal[legsProp]);
 
-let lecture = 10;
-let section = 3;
-let title = 'Javascript'
-//course is an object
-const course = {  
-    //properties
-    lecture: 10, 
-    section: 3,
-    title: 'Javascript',
-    //nested object
-    notes: { 
-        intro: 'Welcome'
-    },
-    //creating function in a object
-    enroll() {
-        console.log('You are enrolled')
+// let lecture = 10;
+// let section = 3;
+// let title = 'Javascript'
+// //course is an object
+// const course = {  
+//     //properties
+//     lecture: 10, 
+//     section: 3,
+//     title: 'Javascript',
+//     //nested object
+//     notes: { 
+//         intro: 'Welcome'
+//     },
+//     //creating function in a object
+//     enroll() {
+//         console.log('You are enrolled')
+//     }
+// }
+// // calling function out of object
+// course.enroll();
+// console.log(course.title);
+// // adding new property in object
+// course.price = 999; 
+
+// FACTORY FUNCTION
+
+function createCourse(title) {
+    return {  
+        title: title,
+        enroll() {
+            console.log('You are enrolled')
+        }
     }
+   
 }
-// calling function out of object
-course.enroll();
-console.log(course.title);
-// adding new property in object
-course.price = 999; 
+const course = createCourse('JavaScript');
+console.log(course);
+
 
 
 
