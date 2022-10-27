@@ -215,6 +215,17 @@ const course = new Course('JS');
 course.enroll();
 console.log(course.title);
 
+// deleting property
+delete course.title;
+console.log(course);
+// adding property to function
+course.checkEnroll = function() {
+    console.log('30 Enrolled!');
+}
+course.enroll();
+console.log(course);
+
+
 
 // ARRAYS
 
