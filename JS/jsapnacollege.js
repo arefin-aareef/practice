@@ -183,6 +183,7 @@
 //         console.log('You are enrolled')
 //     }
 // }
+
 // // calling function out of object
 // course.enroll();
 // console.log(course.title);
@@ -191,41 +192,46 @@
 
 // FACTORY FUNCTION
 
-function createCourse(title) {
-    return {  
-        title: title,
-        enroll() {
-            console.log('You are enrolled')
-        }
-    }
+// function createCourse(title) {
+//     return {  
+//         title: title,
+//         enroll() {
+//             console.log('You are enrolled')
+//         }
+//     }
    
-}
+// }
 // const course = createCourse('JavaScript');
 // console.log(course);
 
 // CONSTRUCTER FUNCTION
 
-function Course(title) {
-    this.title = title,
-    this.enroll = function() {
-        console.log('You are enrolled Now')
-    }
-}
-const course = new Course('JS');
-course.enroll();
-console.log(course.title);
+// function Course(title) {
+//     this.title = title,
+//     this.enroll = function() {
+//         console.log('You are enrolled Now')
+//     }
+// }
+// const course = new Course('JS');
+// course.enroll();
+// console.log(course.title);
 
-// deleting property
-delete course.title;
-console.log(course);
-// adding property to function
-course.checkEnroll = function() {
-    console.log('30 Enrolled!');
-}
-course.enroll();
-console.log(course);
+// // deleting property
+// delete course.title;
+// console.log(course);
+// // adding property to function
+// course.checkEnroll = function() {
+//     console.log('30 Enrolled!');
+// }
+// course.enroll();
 
+// console.log(course);
 
+// CONSTRACTOR METHOD
+
+// const newCourse = new Course('JS Constructor Method');
+// console.log(course.constructor);
+// console.log(newCourse.constructor);
 
 // ARRAYS
 
@@ -237,3 +243,20 @@ console.log(course);
 // for(let index in names) {
 //     console.log(index, names[index]);
 // }
+
+// DIFFERNCE BETWEEN PRIMITIVE AND REFERENCE DATA TYPE 
+// primitive data type
+let number = 10;
+// pass by value
+let number2 = number; 
+number = 15;
+console.log(number);
+console.log(number2);
+
+// reference data type
+let obj = {number: 10};
+// pass by reference
+let obj2 = obj;
+obj.number = 15;
+console.log(obj);
+console.log(obj2);
