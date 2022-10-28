@@ -113,3 +113,7 @@ console.log(arrays[arrays.length-1])
 // DECLEARING ARRAYS WITH OBJECTS
 
 const num = new Array(1,2,3,4,5,6,7,8,9);
+
+// PUSH METHOD (adding element to array)
+
+console.log(num.push(10))
