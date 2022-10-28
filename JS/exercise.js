@@ -104,3 +104,12 @@
 // let chair = new Furniture('Chair');
 
 // ARRAYS
+
+const arrays = [1,2,3,4,5,6,7,8,9];
+console.log(arrays)
+console.log(arrays[4])
+console.log(arrays[arrays.length-1])
+
+// DECLEARING ARRAYS WITH OBJECTS
+
+const num = new Array(1,2,3,4,5,6,7,8,9);
