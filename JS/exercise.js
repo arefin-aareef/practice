@@ -114,6 +114,16 @@ console.log(arrays[arrays.length-1])
 
 const num = new Array(1,2,3,4,5,6,7,8,9);
 
-// PUSH METHOD (adding element to array)
+// PUSH METHOD (adding element in the end to array)
 
 console.log(num.push(10))
+
+// UNSHIFT METHOD (adding element in the beginnig to array)
+console.log(num.unshift(0))
+
+// POP METHOD (removing element from end)
+console.log(num.pop())
+
+// SHIFT METHOD (removing element from start)
+console.log(num.shift())
+
