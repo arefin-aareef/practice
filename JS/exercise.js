@@ -127,3 +127,9 @@ console.log(num.pop())
 // SHIFT METHOD (removing element from start)
 console.log(num.shift())
 
+// CHANGING ARRAY INDEX VALUE
+num[0] = 10
+num[1] = 'Aareef'
+num[2] = {num:80}
+console.log(num)
+
