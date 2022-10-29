@@ -146,5 +146,23 @@ console.log(names.lastIndexOf('Chayon'))
 console.log(names.includes('Rakib'))
 console.log(names.includes('Rakib', 2))
 
+// FIND OPERATION 
 
+let channels = [{
+    name: 'ntv',
+    sub: 50000
+}, {
+    name: 'atn',
+    sub: 30000
+}, {
+    name: 'rtv',
+    sub: 40000
+}];
 
+// INLINCE CALLBACK 
+console.log(channels.find(function(element) {
+    return element.sub === 40000
+})) 
+
+// ARROW FUNCTION
+console.log(channels.find(element => element.name === 'ntv')) 
