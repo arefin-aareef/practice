@@ -141,5 +141,10 @@ console.log(names.indexOf('Hemel'))
 console.log(names.indexOf('Hemel',3))
 console.log(names.lastIndexOf('Chayon'))
 
+// INCLUDE METHOD
+
+console.log(names.includes('Rakib'))
+console.log(names.includes('Rakib', 2))
+
 
 
