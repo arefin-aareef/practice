@@ -178,3 +178,8 @@ console.log(fname.concat(lname))
 
 // SLICE METHOD
 console.log(fullName.slice(2,5))
+
+// SPREAD OPERATOR
+let callName = [...fname,...lname]
+console.log(callName)
+
