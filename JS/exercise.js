@@ -221,3 +221,82 @@ console.log(cities.filter(city => city.pop > 500000))
 // MAP METHOD
 
 console.log('Using Map: ' + cities.map(city => city.pop * 2))
+
+// ARRAY PRACTICE
+
+const friends = [
+    {
+        name: 'shohag',
+        height: '150',
+        weight: '80',
+        color: 'brown',
+        gender: 'male'
+    },
+    {
+        name: 'hemel',
+        height: '145',
+        weight: '70',
+        color: 'white',
+        gender: 'male'
+    },
+    {
+        name: 'orchi',
+        height: '140',
+        weight: '65',
+        color: 'white',
+        gender: 'female'
+    },
+    {
+        name: 'chayon',
+        height: '147',
+        weight: '60',
+        color: 'brown',
+        gender: 'male'
+    }
+];
+// get an array of all name
+const friendName = friends.map(frnd => frnd.name)
+console.log(friendName)
+
+// get an array of obj with name and height properties
+const nameHeight = friends.map(frnd => {
+    return {
+        name: frnd.name,
+        height: frnd.height
+    }
+})
+console.log(nameHeight)
+
+// get the total height of all character
+const totalWeight = friends.reduce((prevWeight, character) => {
+    return prevWeight + Number(character.weight);
+},0);
+console.log(totalWeight)
+
+// get character with height greater than 145
+const graterHeight = friends.filter((character) => {
+    return character.height > 145
+})
+console.log(graterHeight)
+
+// get all male character
+const genderMale = friends.filter(character => character.gender == 'male')
+console.log(genderMale)
+
+// sort by name
+const genderSort = friends.sort((ch1, ch2) => {
+    if (ch1.name < ch2.name) {
+        return -1;
+    }
+    if (ch1.name > ch2.name) {
+        return 1;
+    }
+    return 0
+})
+console.log(genderSort)
+
+// does every character have weight more than 65
+console.log(friends.every(ch => ch.weight > 55))
+
+// at least one male chracter
+console.log(friends.some(ch => ch.gender))
