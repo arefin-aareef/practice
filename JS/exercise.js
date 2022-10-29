@@ -166,3 +166,15 @@ console.log(channels.find(function(element) {
 
 // ARROW FUNCTION
 console.log(channels.find(element => element.name === 'ntv')) 
+
+// CONCAT METHOD
+
+let fname = ['kazi', 'shekh', 'rahman'];
+let lname = ['arefin', 'tony', 'rashik'];
+let fullName = fname.concat(lname)
+
+console.log(fname.concat('shikdar'))
+console.log(fname.concat(lname))
+
+// SLICE METHOD
+console.log(fullName.slice(2,5))
