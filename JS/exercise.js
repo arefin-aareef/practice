@@ -183,3 +183,11 @@ console.log(fullName.slice(2,5))
 let callName = [...fname,...lname]
 console.log(callName)
 
+// FOR LOOP IN ARRAY
+for(let i = 0; i<fname.length; i++) {
+    console.log(fname[i])
+}
+// FOR OF LOOP
+for (let name of lname) {
+    console.log(name)
+}
