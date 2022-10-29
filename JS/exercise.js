@@ -196,3 +196,14 @@ for (let name of lname) {
 fullName.forEach(function(name, index) {
     console.log(name, index)
 })
+
+// JOIN METHOD
+let student = ['K','a','z','i']
+console.log('Comma by default: ' + student.join())
+console.log('No space: ' + student.join(''))
+console.log('Using seperator: ' + student.join('_'))
+console.log(student.join('='))
+student = student.join('+')
+
+// SPLIT METHOD
+console.log(student.split('+'))
