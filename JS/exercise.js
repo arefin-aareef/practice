@@ -217,3 +217,7 @@ let cities = [
 ];
 
 console.log(cities.filter(city => city.pop > 500000))
+
+// MAP METHOD
+
+console.log('Using Map: ' + cities.map(city => city.pop * 2))
