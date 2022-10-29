@@ -207,3 +207,13 @@ student = student.join('+')
 
 // SPLIT METHOD
 console.log(student.split('+'))
+
+// FILTER METHOD
+
+let cities = [
+    {name: 'dhaka', pop: 2000000},
+    {name: 'khulna', pop: 1000000},
+    {name: 'jashore', pop: 500000}
+];
+
+console.log(cities.filter(city => city.pop > 500000))
