@@ -133,3 +133,13 @@ num[1] = 'Aareef'
 num[2] = {num:80}
 console.log(num)
 
+// INDEX OF METHOD
+
+const names = ['Arefin', 'Rakib', 'Hemel', 'Chayon', 'Hemel'];
+console.log(names)
+console.log(names.indexOf('Hemel'))
+console.log(names.indexOf('Hemel',3))
+console.log(names.lastIndexOf('Chayon'))
+
+
+
