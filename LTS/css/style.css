@@ -148,10 +148,16 @@ a:active {
 
 /* HEADER*/
 
-.header {
+.nav {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.header {
+    position: relative;
+    /* top: 0;
+    z-index: 1; */
 }
 
 .header__h1 {
@@ -160,6 +166,7 @@ a:active {
     color: var(--HEADER-COLOR);
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
+
 
 .header__nav {
     background-color: var(--NAV-BGCOLOR);
@@ -189,7 +196,7 @@ a:active {
     letter-spacing: 0.1rem;
     text-shadow: 2px 2px 5px var(--BORDER-COLOR);
     position: absolute;
-    top: -100px;
+    top: -200px;
     left: 20px;
     animation: showWelcome 0.5s ease-in-out 1s forwards;
 }
