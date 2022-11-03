@@ -300,3 +300,32 @@ console.log(friends.every(ch => ch.weight > 55))
 
 // at least one male chracter
 console.log(friends.some(ch => ch.gender))
+
+// THIS KEYWORD
+
+let counter = createCounter();
+let counter1 = createCounter();
+
+function createCounter() {
+    return {
+        count: 0,
+        increment: function() {
+            this.count++;
+        }
+    }
+}
+
+counter.increment();
+counter1.increment();
+counter1.increment();
+console.log(counter);
+console.log(counter1);
+
+var count = 0;
+function incrementCounter() {
+    this.count++;
+}
+
+incrementCounter();
+incrementCounter();
+console.log(count);
