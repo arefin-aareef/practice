@@ -31,3 +31,9 @@ function stringConcat(separator, ...strings) {
     return returnVal;
 }
 console.log(stringConcat('+', 'this', 'is', 'invalid'))
+
+// DESTRUCTURING - EXERCISE 03
+let [first,second,third,...others] = [1, 2, 3, 4, 5, 6, 7, 8]
+console.log(first)
+console.log(others)
+
