@@ -33,7 +33,20 @@ function stringConcat(separator, ...strings) {
 console.log(stringConcat('+', 'this', 'is', 'invalid'))
 
 // DESTRUCTURING - EXERCISE 03
+
 let [first,second,third,...others] = [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(first)
 console.log(others)
 
+// EXERCISE 4
+
+function matchHouses(house) {
+    if(house <=0){
+        return 0;
+    }
+    else {
+        return house * 6 - house + 1;
+    }
+    
+}
+console.log(matchHouses(2))
