@@ -66,6 +66,15 @@
             console.log(listItem)
             console.log(document.getElementsByTagName("table"))
 
+            // Query Selector
+            const listItems = document.querySelector('.list_item')
+            console.log(listItems)
+            const listItems1 = document.querySelectorAll('.list_item')
+            console.log(listItems1)
+            const listItems2 = document.querySelector('#element')
+            console.log(listItems2)
+            const listItems3 = document.querySelectorAll('ul > li:nth-child(1)')
+            console.log(listItems3[0].textContent)
 
         </script>
     </body>
