@@ -7,8 +7,8 @@
         <title>DOM Manupulation</title>
     </head>
     <body>
-        <ul>
-            <li>First element</li>
+        <ul id="element">
+            <li class="list_item">First element</li>
             <li>Second element</li>
             <li>Third element</li>
         </ul>
@@ -54,6 +54,18 @@
             console.log(tableTag.tBodies[0].rows[0].cells[1].textContent)
             console.log(tableTag.rows)
             console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color: blue;")
+
+            // ID Search
+            element.style.background = "red"
+
+            const ulTag1 = document.getElementById("element")
+            ulTag1.style.backgroundColor = "green"
+
+            // Selecting Particular Element with Class Name
+            listItem = document.getElementsByClassName("list_item")
+            console.log(listItem)
+            console.log(document.getElementsByTagName("table"))
+
 
         </script>
     </body>
