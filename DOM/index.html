@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DOM Manupulation</title>
     </head>
-    <body>
-        <ul id="element">
+    <body id="body">
+        <ul id="element" data="valid">
             <li class="list_item">First element</li>
             <li>Second element</li>
             <li>Third element</li>
@@ -87,6 +87,16 @@
             console.log(listItems3[0].textContent)
 
             console.log(allDivs)
+
+            // Accessing attribute
+
+            console.log(element.getAttribute('data'))
+            console.log(element.setAttribute('order-placed', 'pending'))
+            console.log(element.getAttribute('order-placed'))
+            console.log(element.hasAttribute('order-placed'))
+            console.log(element.removeAttribute('order-placed'))
+            console.log(element.hasAttribute('order-placed'))
+            console.log(element.attributes)
 
         </script>
     </body>
