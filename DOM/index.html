@@ -13,7 +13,7 @@
             <li>Third element</li>
         </ul>
 
-        <div class="allDivs">First Div</div>
+        <div id="firstDiv" class="allDivs">First Div</div>
 
         <script>
             const allDivs = document.querySelectorAll(".allDivs")
@@ -97,6 +97,29 @@
             console.log(element.removeAttribute('order-placed'))
             console.log(element.hasAttribute('order-placed'))
             console.log(element.attributes)
+
+            // Creating Removing and Updating Element
+
+            const newDiv = document.createElement('div')
+            const newText = document.createTextNode('Hello')
+            newDiv.appendChild(newText)
+            body.append(newDiv)
+            body.prepend(newDiv)
+            body.before(newDiv)
+            body.after(newDiv)
+
+            firstDiv.replaceWith(newDiv)
+            // newDiv.remove()
+            newDiv.textContent = "Hi Aareef"
+            body.append(newDiv)
+
+            const anotherDiv = document.createElement('div')
+            anotherDiv.innerHTML = `<ul id="element" data="valid">
+            <li class="list_item">First element</li>
+            <li>Second element</li>
+            <li>Third element</li>
+            </ul>`
+            body.append(anotherDiv)
 
         </script>
     </body>
