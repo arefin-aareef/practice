@@ -15,10 +15,10 @@
 
         <div id="firstDiv" class="allDivs">First Div</div>
 
-        <script>
+        <!-- <script>
             const allDivs = document.querySelectorAll(".allDivs")
             console.log(allDivs)
-        </script>
+        </script> -->
 
         <div class="allDivs">Second Div</div>
         
@@ -32,6 +32,9 @@
                 <td>Four</td>
             </tr>
         </table>
+
+        <button id="clickButton" onclick="alert('good day')">Click me</button>
+
         <script>
             // Root node
             console.log(document.documentElement)
@@ -86,7 +89,7 @@
             const listItems3 = document.querySelectorAll('ul > li:nth-child(1)')
             console.log(listItems3[0].textContent)
 
-            console.log(allDivs)
+            // console.log(allDivs)
 
             // Accessing attribute
 
@@ -120,6 +123,18 @@
             <li>Third element</li>
             </ul>`
             body.append(anotherDiv)
+
+            // Events
+            function callMe(){
+                alert('Thank you')
+            }
+            // clickButton.onclick = callMe
+
+            clickButton.addEventListener('click', callMe)
+            clickButton.addEventListener('click', function(){
+                alert("bye bye")
+            })
+            clickButton.removeEventListener('click', callMe)
 
         </script>
     </body>
