@@ -13,6 +13,14 @@
             <li>Third element</li>
         </ul>
 
+        <div class="allDivs">First Div</div>
+
+        <script>
+            const allDivs = document.querySelectorAll(".allDivs")
+            console.log(allDivs)
+        </script>
+
+        <div class="allDivs">Second Div</div>
         
         <table>
             <tr>
@@ -53,9 +61,9 @@
             
             // Table DOM Manupulation
             const tableTag = document.body.children[1]
-            console.log(tableTag.tBodies[0].rows[0].cells[1].textContent)
+            // console.log(tableTag.tBodies[0].rows[0].cells[1].textContent)
             console.log(tableTag.rows)
-            console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color: blue;")
+            // console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color: blue;")
 
             // ID Search
             element.style.background = "red"
@@ -77,6 +85,8 @@
             console.log(listItems2)
             const listItems3 = document.querySelectorAll('ul > li:nth-child(1)')
             console.log(listItems3[0].textContent)
+
+            console.log(allDivs)
 
         </script>
     </body>
